@@ -12,6 +12,7 @@ public class Components {
     void dfs( int v ){
 
         visited[v] = true;
+        //记录每个顶点所属的联通分量
         id[v] = ccount;
 
         for( int i: G.adj(v) ){
